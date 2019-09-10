@@ -1,0 +1,172 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap');
+
+
+/* custom variables */
+:root {
+  --intro-blue: hsl(217, 28%, 15%);
+  --main-blue: hsl(218, 28%, 13%);
+  --footer-blue: hsl(216, 53%, 9%);
+  --testimonial-blue: hsl(219, 30%, 18%);
+
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ global styles ~~~~~~~~~~~~~~~~~~~~~~~~ */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1, button, a {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+
+p {
+  margin: 2rem 0;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* layout */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 144rem;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+/* button styles */
+.btn {
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-image: linear-gradient(to bottom right, var(--cyan), var(--blue));
+  margin: 2rem 0;
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .1);
+  transition: transform 250ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0px);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ hero section ~~~~~~~~~~~~~~~~~~~~~~~ */
+.hero-section {
+  background-color: var(--intro-blue);
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+/* navigation/header */
+.hero-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-nav > .nav-menu {
+  display: flex;
+}
+
+.hero-nav .nav-item {
+  margin-left: 4rem;
+}
+
+.hero-nav .nav-link {
+  padding: 1.5rem;
+  outline: none;
+  transition: transform 100ms ease;
+}
+
+.hero-nav .nav-link:active {
+  transform: translateY(1px);
+}
+
+/* content */
+.hero-content {
+  width: 60%;
+  margin: 6rem auto;
+}
+
+.hero-content > .image {
+  max-width: 90%;
+  margin: 3rem 0;
+}
+
+.hero-content > .info {
+  font-size: 1.6rem;
+}
+
+.hero-content > .btn {
+  width: 25rem;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ main section ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.main-section {
+  background-color: var(--main-blue);
+}
+
+
+/* call-to-action form */
+.main-cta {
+  background-color: var(--intro-blue);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ footer ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.footer {
+  background-color: var(--footer-blue);
+  margin: 0 auto;
+}
+
