@@ -35,7 +35,7 @@ body {
   font-weight: 400;
 }
 
-h1, button, a {
+h1, h4, button, a {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -44,8 +44,13 @@ h1 {
   margin: 3rem 0;
 }
 
+h4 {
+  font-size: 2rem;
+  margin: .5rem 0;
+}
+
 p {
-  margin: 2rem 0;
+  margin: 1.3rem 0;
   line-height: 1.5;
 }
 
@@ -143,14 +148,9 @@ ul {
   margin: 3rem 0;
 }
 
-.hero-content > .info {
-  font-size: 1.6rem;
-}
-
 .hero-content > .btn {
   width: 25rem;
 }
-
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~ main section ~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -158,6 +158,83 @@ ul {
   background-color: var(--main-blue);
 }
 
+.main-section > .container {
+  padding-top: 0;
+}
+
+/* features */
+.main-features {
+  width: 70%;
+  margin: 0 auto 0 auto;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    'a b'
+    'c d';
+}
+
+.feature .icon {
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.main-features > .feature-a {
+  grid-area: a;
+}
+.main-features > .feature-b {
+  grid-area: b;
+}
+.main-features > .feature-c {
+  grid-area: c;
+}
+.main-features > .feature-d {
+  grid-area: d;
+}
+
+/* product */
+.main-product {
+  margin: 12rem auto;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'left right'; 
+}
+
+.main-product > .product-left {
+  grid-area: left;
+}
+
+.main-product > .product-right {
+  grid-area: right;
+  text-align: left;
+  margin: auto 0;
+}
+
+.product-left > .image {
+  max-width: 90%;
+}
+
+/* custom link */
+.link-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--cyan);
+}
+
+.link-wrapper .link {
+  cursor: pointer;
+  margin-right: .7rem;
+  padding: .6rem 0;
+  color: var(--cyan);
+}
+
+
+
+/* testimonials */
 
 /* call-to-action form */
 .main-cta {
